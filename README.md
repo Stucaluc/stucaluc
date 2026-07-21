@@ -183,7 +183,7 @@ Conversion-focused structure: hero section, social proof, services showcase and 
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=stucaluc&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=A78BFA&line=7C3AED&point=c9d1d9&area=true&area_color=7C3AED" width="95%" alt="Contribution Graph"/>
+<img src="./contrib-heatmap.svg" width="95%" alt="Contribution Heatmap"/>
 
 </div>
 
