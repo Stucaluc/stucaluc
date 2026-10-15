@@ -16,8 +16,8 @@ HERE = os.path.dirname(__file__)
 IN_PATH = os.path.join(HERE, "..", "data", "contributions.json")
 OUT_PATH = os.path.join(HERE, "..", "contrib-heatmap.svg")
 
-# GitHub-ish green ramp: empty -> brightest. Level 5 is a brighter neon top end.
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
+# Purple ramp matching the profile header: empty -> brightest.
+PALETTE = ["#1c1830", "#3b1d78", "#5B21B6", "#7C3AED", "#A78BFA", "#DDD6FE"]
 
 CELL = 12
 GAP = 3
@@ -27,13 +27,13 @@ LEFT_LABEL_W = 30
 TOP_LABEL_H = 20
 TITLEBAR_H = 30
 
-BG = "#0a0e14"
-BG2 = "#0d1420"
-FRAME = "#1f6feb"
-MUTED = "#7d8590"
+BG = "#0a0a12"
+BG2 = "#0f0b1d"
+FRAME = "#7C3AED"
+MUTED = "#8b85a6"
 TEXT = "#e6edf3"
-ACCENT = "#22d3ee"
-GREEN = "#39d353"
+ACCENT = "#A78BFA"
+GREEN = "#c4b5fd"
 GOLD = "#f2cc60"
 
 # reveal timing (one-shot)
@@ -125,7 +125,7 @@ def render(data):
     for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
         parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
     parts.append(f'<text x="{canvas_w/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="12" '
-                 f'text-anchor="middle">avi@github: ~/contributions --graph</text>')
+                 f'text-anchor="middle">daniel@stucaluc: ~/contributions --graph</text>')
 
     grid_top = TITLEBAR_H + TOP_LABEL_H
     grid_left = PAD + LEFT_LABEL_W
@@ -181,12 +181,13 @@ def render(data):
     parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="12" fill="{MUTED}" text-anchor="end">'
                  f'{rng["start"]} &#8594; {rng["end"]}</text>')
     ly += 24
-    parts.append(f'<text x="{PAD}" y="{ly}" font-size="13" fill="{MUTED}">current streak '
-                 f'<tspan fill="{ACCENT}" font-weight="700">{cs} days</tspan>'
-                 f'<tspan fill="{MUTED}">   &#183;   longest </tspan>'
-                 f'<tspan fill="{ACCENT}" font-weight="700">{ls} days</tspan></text>')
+    active = data["active_days"]
+    parts.append(f'<text x="{PAD}" y="{ly}" font-size="13" fill="{MUTED}">active days '
+                 f'<tspan fill="{ACCENT}" font-weight="700">{active}</tspan>'
+                 f'<tspan fill="{MUTED}">   &#183;   longest run </tspan>'
+                 f'<tspan fill="{ACCENT}" font-weight="700">{ls} day{"s" if ls != 1 else ""}</tspan></text>')
     parts.append(f'<text x="{canvas_w - PAD}" y="{ly}" font-size="12" fill="{MUTED}" text-anchor="end">'
-                 f'best day <tspan fill="{GOLD}" font-weight="700">{best["count"]}</tspan> on {best["date"]}</text>')
+                 f'best day: {best["count"]} on {best["date"]}</text>')
 
     parts.append("</svg>")
     return "".join(parts)
