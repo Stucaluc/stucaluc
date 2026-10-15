@@ -61,9 +61,14 @@ Automations for administrative and financial processes, bots integrating legacy 
 
 ## Stack
 
-<img src="https://skillicons.dev/icons?i=php,js,ts,html,css,python,bootstrap,tailwind,react,vite,nodejs,laravel,mysql,postgres,mongodb,docker,linux,git,figma&perline=10&theme=dark" alt="PHP, JavaScript, TypeScript, HTML, CSS, Python, Bootstrap, Tailwind, React / React Native, Vite, Node.js, Laravel, MySQL, PostgreSQL, MongoDB, Docker, Linux, Git, Figma"/>
-
-Mobile with **React Native + Expo**.
+<table>
+<tr><td><b>Languages</b></td><td><img src="https://skillicons.dev/icons?i=php,js,ts,html,css,python&theme=dark" height="40" alt="PHP, JavaScript, TypeScript, HTML, CSS, Python"/></td></tr>
+<tr><td><b>Front-end</b></td><td><img src="https://skillicons.dev/icons?i=bootstrap,react,tailwind,vite&theme=dark" height="40" alt="Bootstrap, React, Tailwind, Vite"/></td></tr>
+<tr><td><b>Back-end</b></td><td><img src="https://skillicons.dev/icons?i=nodejs,laravel&theme=dark" height="40" alt="Node.js, Laravel"/></td></tr>
+<tr><td><b>Databases</b></td><td><img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb&theme=dark" height="40" alt="MySQL, PostgreSQL, MongoDB"/></td></tr>
+<tr><td><b>Mobile</b></td><td><img src="https://skillicons.dev/icons?i=react&theme=dark" height="40" alt="React Native"/> <img src="https://img.shields.io/badge/Expo-1a1b27?style=for-the-badge&logo=expo&logoColor=A78BFA" height="40" alt="Expo"/></td></tr>
+<tr><td><b>DevOps &amp; tools</b></td><td><img src="https://skillicons.dev/icons?i=linux,docker,git,github,vscode,figma&theme=dark" height="40" alt="Linux, Docker, Git, GitHub, VS Code, Figma"/></td></tr>
+</table>
 
 ## Activity
 
