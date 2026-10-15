@@ -6,8 +6,17 @@
 
 <br/><br/>
 
+<img src="https://img.shields.io/badge/Bacharelado-Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%20%C2%B7%20Universidade%20Br%C3%A1s%20Cubas-7C3AED?style=flat-square&logo=googlescholar&logoColor=white" alt="Bacharelado em Ciência da Computação — Universidade Brás Cubas"/>
+<img src="https://img.shields.io/badge/Tecn%C3%B3logo-Defesa%20Cibern%C3%A9tica%20%C2%B7%20FIAP-6D28D9?style=flat-square&logo=hackthebox&logoColor=white" alt="Tecnólogo em Defesa Cibernética — FIAP"/>
+
+<br/>
+
 <a href="https://www.linkedin.com/in/daniel-stucaluc-devweb-ti/"><img src="https://img.shields.io/badge/LinkedIn-7C3AED?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="mailto:stucalucsystems@gmail.com"><img src="https://img.shields.io/badge/stucalucsystems%40gmail.com-5B21B6?style=flat-square&logo=gmail&logoColor=white" alt="E-mail"/></a>
+
+<br/>
+<img src="https://komarev.com/ghpvc/?username=stucaluc&style=flat-square&color=7C3AED&label=VISUALIZA%C3%87%C3%95ES" alt="Visualizações do perfil"/>
+<a href="https://github.com/Stucaluc?tab=followers"><img src="https://img.shields.io/github/followers/stucaluc?style=flat-square&color=6D28D9&labelColor=1a1b27&label=SEGUIDORES" alt="Seguidores"/></a>
 
 </div>
 
@@ -60,7 +69,13 @@ Mobile com **React Native + Expo**.
 
 <img src="./contrib-heatmap.svg" width="100%" alt="Mapa de contribuições dos últimos 12 meses"/>
 
-<sub>Gerado todo dia por uma GitHub Action deste repositório (<code>scripts/</code>), sem serviço de estatísticas de terceiros.</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/stucaluc/stucaluc/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/stucaluc/stucaluc/output/github-contribution-grid-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/stucaluc/stucaluc/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Cobrinha comendo o gráfico de contribuições"/>
+</picture>
+
+<sub>Heatmap e cobrinha gerados todo dia por GitHub Actions deste repositório.</sub>
 
 ## Agora
 
